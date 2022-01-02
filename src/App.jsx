@@ -4,31 +4,33 @@ import "./styles.css";
 export const App = () => {
   return (
     <>
-      <div>
+      <div className="input-area">
         <input placeholder="TODOを入力" />
         <button>追加</button>
       </div>
-      <div>
-        <p>未完了のTODO</p>
+      <div className="incomplete-area">
+        <p className="title">未完了のTODO</p>
         <ul>
-          <div>
+          <div className="list-row">
             <li>TODO1です</li>
             <button>追加</button>
             <button>削除</button>
           </div>
-          <div>
+          <div className="list-row">
             <li>TODO2です</li>
             <button>追加</button>
             <button>削除</button>
           </div>
         </ul>
-        <p>完了のTODO</p>
+      </div>
+      <div className="complete-area">
+        <p className="title">完了のTODO</p>
         <ul>
-          <div>
+          <div className="list-row">
             <li>TODO３です</li>
             <button>戻す</button>
           </div>
-          <div>
+          <div className="list-row">
             <li>TODO４です</li>
             <button>戻す</button>
           </div>
